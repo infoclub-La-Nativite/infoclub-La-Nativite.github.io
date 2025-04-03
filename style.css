@@ -112,13 +112,14 @@ a {
   background-color: rgb(8, 0, 0);
 }
 .sectionv {
-  background-color : rgba(255, 255, 255, 0.863);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.600);
-  
+  width: 100%; /* Les conteneurs occupent toute la largeur disponible */
+  padding: 20px; /* Espacement interne */
+  margin-bottom: 10px; /* Espacement entre les deux conteneurs */
+  background-color: lightblue; /* Pour donner une couleur de fond */
+  text-align: center; /* Centrer le texte */
 }
+
+
 .ligne {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Crée 3 colonnes qui s'adaptent à la largeur de l'écran */
