@@ -1,167 +1,71 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-header {
-    background-color: #333;
-    color: #dff;
-    padding: 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
+margin-top: -5px;
+margin-bottom: 6px;
+font-size: 60px;
+text-transform: capitalize;
+text-align: center;
 
 
-h1 {
-  margin-top: -7px;
-  margin-bottom: 10px;
-  font-size: 70px;
-  text-transform: capitalize;
-    text-shadow:
-    -5px -5px 5px #aaa,
-    0px 10px 5px rgba(0, 0, 0, 0.5),
-    10px 10px 10px rgba(0, 0, 0, 0.7),
-    0px 0px 10px rgba(0, 0, 0, 0.4);
-  text-align: center;
-}
-h2 {
-    text-align: center;
-    color: #333;
-}
-h3 {
-    color: #007bff; /* Bleu */
-}
-h4 {
-  margin-left: 10px;
-}
-
-a {
-  font-size: 35px;
-  outline: none;
-  text-decoration-color: #007bff2a;
-  color: #007bff;
-  padding: 2px 1px 0;
-}
-
-.img {
-  display: block;
-  margin: auto;
-  margin-top: 0px;
-  width: 280px;
-  height: 280px;
-}
-.tipar{
-  font-size: 35px;
-  outline: none;
-  text-decoration: none;
-  color: #007bff;
-  padding: 2px 1px 0;
-}
-.prct {
-  padding : 3px;
-  margin: 20px;
-  margin-top: 0px ;
-  border-radius: 4px;
-  width: 230px;
-  color : rgb(201, 13, 13);
-  border-color : green;
-}
-.iml {
-  margin : 10px;
-}
-.btn {
-  border-radius : 9px;
-  display : flex;
-  margin : auto;
-}
-.center{
-  text-align: right;
-}  
-.ref :hover{
-  background-color: rgb(8, 0, 0);
-}
-.sectionv {
-  width: 100%; /* Les conteneurs occupent toute la largeur disponible */
-  padding: 20px; /* Espacement interne */
-  margin-bottom: 10px; /* Espacement entre les deux conteneurs */
-  background-color: lightblue; /* Pour donner une couleur de fond */
-  text-align: center; /* Centrer le texte */
-  max-width: 600px;
-}
-
-.site-footer {
-  background-color: #333;
-  color: white;
-  padding: 15px 0;
-  bottom: 2px;
-  left: 0;
-  width: 100%;
-  height: 10%;
-  border-radius : 7px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-
-.footer-about, .footer-links, .footer-contact {
-  flex: 1;
-  min-width: 190px;
-  margin-bottom: 15px;
-}
-
-.container2 {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  	border-radius : 5px;
-}
+site-footer
+background-color: #1a7cfc;
+color: white;
+padding: 15px 0;
+position: fixed;
+bottom: 2px;
+left: ;
+width: 100%;
+border-radius
+Se
+7px;
 
 
+container
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 0 15px;
 
-#par2 {
-  margin-bottom: 5px;
-}
-#logo {
-  border-radius: 150px;
-  width: 200px;
-  height: 200px;
-  display: block;
 
-}
+footer-about
+flex: 1;
+min-width: 190px;
+margin-bottom: 15px;
+
+
+body
+font-family: Arial, sans-serif;
+margin: ;
+padding: ;
+
+
+header
+background-color: #333;
+color: #fff;
+padding: 1em;
+text-align: center;
+
+
+nav ul
+list-style: none;
+margin: 0;
+padding: ;
+display: flex;
+justify-content: space-between;
+
+
+nav li f
+margin-right: 20px;
+
+
+nav a
+color: #fff;
+text-decoration: none;
+
+
+main
+display: flex;
+
+
+Top
+
+
+*
