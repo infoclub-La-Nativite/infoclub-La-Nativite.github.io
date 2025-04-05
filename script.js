@@ -1,14 +1,8 @@
-Tableau des cours
-const cours
-L
-f title: "Premier cours sur
-file: "mathematiques.pdf" ),
-.
-f title: "Deuxième cours", file: "physique.pdf" .
-[ title: "Troisième cours", file: "chimie.pdf" ),
-// Ajoutez vos cours ici
+const cours = [
+  { title: "Premier cours", file : "mathematiques.pdf" },
+  { title: "Premier cours", file : "mathematiques.pdf" },
+  { title: "Premier cours", file : "mathematiques.pdf" },
 ]
-
 
 // Fonction pour générer la liste des cours
 function generateCoursList() f
