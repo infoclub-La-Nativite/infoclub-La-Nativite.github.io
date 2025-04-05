@@ -22,12 +22,13 @@ function generateCoursList(){
 function displayActualites() {
   const actualitesContainer = document.getElementById("actualites-container");
 // Ajoutez vos actualités ici
-const actualitel = document.createElement("p");
-actualitel.textContent = "Actualité 1 ";
-actualitesContainer.appendChild(actualitel);
-const actualite2 = document.createElement("p");
-actualite2.textContent = "Actualité 2";
-actualitesContainer.appendChild(actualite2);
+  const actualitel = document.createElement("p");
+  actualitel.textContent = "Actualité 1 ";
+  actualitesContainer.appendChild(actualitel);
+  const actualite2 = document.createElement("p");
+  actualite2.textContent = "Actualité 2";
+  actualitesContainer.appendChild(actualite2);
+}
 // Ajoutez vos actualités ici
 
 
