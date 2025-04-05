@@ -1,41 +1,115 @@
-<!DOCTYPE html> 
-<html lang="fr">
-    <head>  
-        <meta charset="utf-8">
-        <link href="style.css" rel="stylesheet" type="text/css">
+<!doctype html>
+<html lang="en">
+	<head>
+		<script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
 
-        <title >Info Club de La Nativité</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#cours">Cours</a></li>
-                    <li><a href="#actualites">Actualités</a></li>
-                </ul>
-            </nav>
-        </header>
-<h1>Infoclub</h1>
-<main>
-    <section id="cours">
-        <h2>Les Cours :</h2>
-        <ul id="cours-list">
-        </ul>
-    </section>
-    <section id="actualites">
-        <h2>Actualités</h2>
-        <div id="actualites-container">
-        </div>
-    </section>
-</main>
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-about">
-            <h3>À propos</h3>
-                <p>Retrouver ici les pdf des cours présentés et découvrer les actualités de l'informatique.</p>
-                <p>Tous droits réservés ○ Infoclub, Aix-En-Provence, Manosque, Lambesc, X 2024</p>
-        </div>
-    <script src="/ressources/scripts.js"></script>
-</footer>
-</body>
-</html
+		<script type="module" src="/@vite/client"></script>
+
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="generator" content="Hostinger Horizons" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hostinger Horizons</title>
+		<script type="module">
+window.onerror = (message, source, lineno, colno, errorObj) => {
+	window.parent.postMessage({
+		type: 'horizons-runtime-error',
+		message,
+		source,
+		lineno,
+		colno,
+		error: errorObj && errorObj.stack
+	}, '*');
+};
+</script>
+		<script type="module">
+const observer = new MutationObserver((mutations) => {
+	for (const mutation of mutations) {
+		for (const addedNode of mutation.addedNodes) {
+			if (
+				addedNode.nodeType === Node.ELEMENT_NODE &&
+				(
+					addedNode.tagName?.toLowerCase() === 'vite-error-overlay' ||
+					addedNode.classList?.contains('backdrop')
+				)
+			) {
+				handleViteOverlay(addedNode);
+			}
+		}
+	}
+});
+
+observer.observe(document.documentElement, {
+	childList: true,
+	subtree: true
+});
+
+function handleViteOverlay(node) {
+	if (!node.shadowRoot) {
+		return;
+	}
+
+	const backdrop = node.shadowRoot.querySelector('.backdrop');
+
+	if (backdrop) {
+		const overlayHtml = backdrop.outerHTML;
+		const parser = new DOMParser();
+		const doc = parser.parseFromString(overlayHtml, 'text/html');
+		const messageBodyElement = doc.querySelector('.message-body');
+		const fileElement = doc.querySelector('.file');
+		const messageText = messageBodyElement ? messageBodyElement.textContent.trim() : '';
+		const fileText = fileElement ? fileElement.textContent.trim() : '';
+		const error = messageText + (fileText ? ' File:' + fileText : '');
+
+		window.parent.postMessage({
+			type: 'horizons-vite-error',
+			error,
+		}, '*');
+	}
+}
+</script>
+		<script type="module">
+const originalConsoleError = console.error;
+console.error = function(...args) {
+	originalConsoleError.apply(console, args);
+
+	const errorString = args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : String(arg)).join(' ').toLowerCase();
+
+	window.parent.postMessage({
+		type: 'horizons-console-error',
+		error: errorString
+	}, '*');
+};
+</script>
+		<script type="module">
+const originalFetch = window.fetch;
+
+window.fetch = async function(...args) {
+	return originalFetch.apply(this, args)
+		.then(async response => {
+			if(!response.ok) {
+				const errorFromRes = await response.text();
+				console.error(errorFromRes);
+			}
+
+			return response;
+		})
+		.catch(error => {
+			console.error(error);
+
+		throw error;
+	});
+};
+</script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
+</html>
