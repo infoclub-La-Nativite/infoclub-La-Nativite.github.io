@@ -1,8 +1,7 @@
 const cours = [
   { title: "Premier cours", file : "mathematiques.pdf" },
   { title: "Premier cours", file : "mathematiques.pdf" },
-  { title: "Premier cours", file : "mathematiques.pdf" },
-];
+  { title: "Premier cours", file : "mathematiques.pdf" },];
 
 // Fonction pour générer la liste des cours
 function generateCoursList(){
