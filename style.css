@@ -1,0 +1,99 @@
+h1{
+        margin-top: -5px;
+        margin-bottom: 6px;
+        font-size: 60px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .site-footer {
+        background-color: #1a7cfc;
+        color: white;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+	    border-radius : 7px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.footer-about {
+    flex: 1;
+    min-width: 190px;
+    margin-bottom: 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#cours-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cours-list li {
+    margin-bottom: 10px;
+}
+
+#cours-list a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+#cours-list a:hover {
+    color: #23527c;
+}
+
+#actualites-container {
+    padding: 20px;
+}
