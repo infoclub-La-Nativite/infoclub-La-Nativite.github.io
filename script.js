@@ -1,7 +1,7 @@
 // Tableau des cours
 const cours = [
-    { title: "Premier cours sur ...", file: "mathematiques.pdf" },
-    { title: "Deuxième cours", file: "physique.pdf" },
+    { title: "Premier cours sur ...", file: "Cours 1.html" },
+    { title: "Deuxième cours", file: "CM_1.pdf" },
     { title: "Troisième cours", file: "chimie.pdf" },
     // Ajoutez vos cours ici
 ];
