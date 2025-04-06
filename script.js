@@ -13,6 +13,7 @@ function generateCoursList() {
         const listItem = document.createElement("li");
         const link = document.createElement("a");
         link.href = `pdf/${cours.file}`;
+        link.target = "_blank";
         link.textContent = cours.title;
         listItem.appendChild(link);
         coursList.appendChild(listItem);
