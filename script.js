@@ -17,7 +17,6 @@ function generateCoursList() {
         link.textContent = cours.title;
         listItem.appendChild(link);
         coursList.appendChild(listItem);
-         console.log("Lien créé :";
     });
 }
 
